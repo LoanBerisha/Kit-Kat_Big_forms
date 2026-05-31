@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>KitKat – Informations personnelles</title>
+  </head>
+  <body>
+    <div class="card">
+      <div class="step" id="step-2">
+        <header class="card-header">
+          <img
+            src="Image/Logo_of_the_KitKat.svg 2.png"
+            alt="KitKat"
+            class="logo"
+          />
+          <h1 class="header-title">Avis Clients</h1>
+        </header>
+
+        <div class="progress-bar">
+          <div class="dot active"></div>
+          <div class="line active"></div>
+          <div class="dot active"></div>
+          <div class="line"></div>
+          <div class="dot"></div>
+        </div>
+
+        <div class="step-content">
+          <h2 class="section-title">Informations personnelles</h2>
+
+          <form id="step2-form">
+          <div class="field">
+            <label class="field-label">Nom, Prénom *</label>
+            <input
+              type="text"
+              id="nom"
+              class="input-field"
+              placeholder="Votre nom et prénom"
+              required
+            />
+          </div>
+
+          <div class="field">
+            <label class="field-label">Adresse e-mail *</label>
+            <input
+              type="email"
+              id="email"
+              class="input-field"
+              placeholder="Votre adresse e-mail"
+              required
+            />
+          </div>
+
+          <div class="field">
+            <label class="field-label">Votre tranche d'âge *</label>
+            <div class="radio-group">
+              <label class="radio-label"
+                ><input type="radio" name="age" value="13-17" required /> 13-17</label
+              >
+              <label class="radio-label"
+                ><input type="radio" name="age" value="18-25" required /> 18-25</label
+              >
+              <label class="radio-label"
+                ><input type="radio" name="age" value="26-35" required /> 26-35</label
+              >
+              <label class="radio-label"
+                ><input type="radio" name="age" value="36-50" required /> 36-50</label
+              >
+              <label class="radio-label"
+                ><input type="radio" name="age" value="50+" required /> 50 +</label
+              >
+            </div>
+          </div>
+          </form>
+        </div>
+
+        <div class="nav-row">
+          <a href="index.html" class="nav-btn">
+            <img src="Image/ArrowRight.png" alt="Précédent" />
+          </a>
+          <button class="nav-btn" onclick="goNext()">
+            <img src="Image/Arrowleft.png" alt="Suivant" />
+          </button>
+        </div>
+
+        <img src="Image/shape de gauche.png" class="shape shape-left" alt="" />
+        <img src="Image/Vecteur 3.png" class="shape shape-right" alt="" />
+      </div>
+    </div>
+
+    <script src="step2.js"></script>
+  </body>
+</html>

@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>KitKat – Avis Clients</title>
+  </head>
+  <body>
+    <div class="card">
+      <div class="step" id="step-1">
+        <header class="card-header">
+          <img
+            src="Image/Logo_of_the_KitKat.svg 2.png"
+            alt="KitKat"
+            class="logo"
+          />
+          <h1 class="header-title">Avis Clients</h1>
+        </header>
+
+        <div class="progress-bar">
+          <div class="dot active"></div>
+          <div class="line"></div>
+          <div class="dot"></div>
+          <div class="line"></div>
+          <div class="dot"></div>
+        </div>
+
+        <div class="step-content">
+          <h2 class="section-title">Votre avis</h2>
+
+          <form id="step1-form">
+          <div class="field">
+            <label class="field-label">Sélectionné le produit *</label>
+            <select id="produit" class="input-field" required>
+              <option value="">— Choisir —</option>
+              <option value="KitKat Original">KitKat Original</option>
+              <option value="KitKat Chunky">KitKat Chunky</option>
+              <option value="KitKat White">KitKat White</option>
+              <option value="KitKat Bar">KitKat Bar</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label class="field-label">Note du produit *</label>
+            <div class="stars" id="stars">
+              <span class="star" data-val="1">★</span>
+              <span class="star" data-val="2">★</span>
+              <span class="star" data-val="3">★</span>
+              <span class="star" data-val="4">★</span>
+              <span class="star" data-val="5">★</span>
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="field-label">Commentaires</label>
+            <textarea
+              id="commentaire"
+              class="input-field textarea"
+              placeholder="Écrire votre avis ici..."
+              rows="3"
+            ></textarea>
+          </div>
+
+          <div class="field">
+            <p class="field-label">Ajouter une image</p>
+            <label class="upload-box" for="photo">
+              <img
+                src="Image/UploadSimple.png"
+                alt="Upload"
+                class="upload-icon"
+              />
+              <span class="upload-text">Ajouter une image</span>
+              <input type="file" id="photo" accept="image/*" hidden />
+            </label>
+            <span class="file-name" id="file-name"></span>
+          </div>
+          </form>
+        </div>
+
+        <div class="nav-row">
+          <button class="nav-btn" onclick="goNext()">
+            <img src="Image/Arrowleft.png" alt="Suivant" />
+          </button>
+        </div>
+
+        <img src="Image/shape de gauche.png" class="shape shape-left" alt="" />
+        <img src="Image/Vecteur 3.png" class="shape shape-right" alt="" />
+      </div>
+    </div>
+
+    <script src="step1.js"></script>
+  </body>
+</html>
