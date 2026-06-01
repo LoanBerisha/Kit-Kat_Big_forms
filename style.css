@@ -225,7 +225,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  border: 2px dashed #bbb;
+  border: 2px dashed #626262;
   border-radius: 10px;
   padding: 20px 16px;
   background: #fff;
@@ -322,14 +322,12 @@ body {
   letter-spacing: 0.5px;
   text-decoration: none;
   text-align: center;
-  transition:
-    background 0.15s,
-    transform 0.1s;
+  transition: background 0.15s;
 }
 
 .submit-btn:hover {
   background: #b5000c;
-  transform: scale(1.03);
+  transform: scale(1);
 }
 
 .nav-row {
