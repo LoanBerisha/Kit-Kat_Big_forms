@@ -1,3 +1,7 @@
+if (!localStorage.getItem("kitkat_step1")) {
+  window.location.replace("index.html");
+}
+
 const saved = JSON.parse(localStorage.getItem("kitkat_step2") || "{}");
 if (saved.nom) document.getElementById("nom").value = saved.nom;
 if (saved.email) document.getElementById("email").value = saved.email;

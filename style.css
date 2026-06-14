@@ -67,7 +67,7 @@ body {
 }
 
 .card {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background: #f7e8c4;
   position: relative;
@@ -89,13 +89,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 48px;
-  gap: 16px;
+  padding: 1.25rem 3rem;
+  gap: 1rem;
   flex-shrink: 0;
 }
 
 .logo {
-  height: 56px;
+  height: 3.5rem;
   width: auto;
   flex-shrink: 0;
 }
@@ -105,7 +105,7 @@ body {
   font-family: "KittyKatt", Georgia, serif;
   font-style: italic;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 2.25rem;
   letter-spacing: 2px;
 }
 
@@ -113,14 +113,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  padding: 24px 0 12px;
+  gap: 0.625rem;
+  padding: 1.5rem 0 0.75rem;
   flex-shrink: 0;
 }
 
 .dot {
-  width: 16px;
-  height: 16px;
+  width: 1rem;
+  height: 1rem;
   border-radius: 50%;
   border: 2.5px solid #d4000e;
   background: transparent;
@@ -132,7 +132,7 @@ body {
 }
 
 .line {
-  width: 60px;
+  width: 3.75rem;
   height: 2.5px;
   background: #d4000e;
   opacity: 0.25;
@@ -147,7 +147,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 20px 48px 16px;
+  padding: 1.25rem 3rem 1rem;
   max-width: 680px;
   width: 100%;
   align-self: center;
@@ -156,32 +156,32 @@ body {
 }
 
 .section-title {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
   color: #1a1a1a;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   letter-spacing: 0.3px;
 }
 
 .field {
-  margin-bottom: 18px;
+  margin-bottom: 1.125rem;
 }
 
 .field-label {
   display: block;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 500;
   color: #555;
-  margin-bottom: 6px;
+  margin-bottom: 0.375rem;
 }
 
 .input-field {
   width: 100%;
   background: #fff;
   border: 1.5px solid #ddd;
-  border-radius: 8px;
-  padding: 10px 16px;
-  font-size: 15px;
+  border-radius: 0.5rem;
+  padding: 0.625rem 1rem;
+  font-size: 0.9375rem;
   color: #1a1a1a;
   outline: none;
   transition: border-color 0.15s;
@@ -197,11 +197,11 @@ body {
 
 .stars {
   display: flex;
-  gap: 6px;
+  gap: 0.375rem;
 }
 
 .star {
-  font-size: 34px;
+  font-size: 2.125rem;
   color: #ccc;
   cursor: pointer;
   transition:
@@ -224,10 +224,10 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 0.5rem;
   border: 2px dashed #626262;
-  border-radius: 10px;
-  padding: 20px 16px;
+  border-radius: 0.625rem;
+  padding: 1.25rem 1rem;
   background: #fff;
   cursor: pointer;
   transition: border-color 0.15s;
@@ -238,20 +238,20 @@ body {
 }
 
 .upload-icon {
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: auto;
   object-fit: contain;
 }
 
 .upload-text {
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #555;
 }
 
 .file-name {
-  font-size: 13px;
+  font-size: 0.8125rem;
   color: #555;
-  margin-top: 4px;
+  margin-top: 0.25rem;
   text-align: center;
   display: block;
 }
@@ -259,36 +259,36 @@ body {
 .radio-group {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 0.625rem;
 }
 
 .radio-label {
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-size: 15px;
+  gap: 0.625rem;
+  font-size: 0.9375rem;
   cursor: pointer;
   color: #1a1a1a;
 }
 
 .radio-label input[type="radio"] {
   accent-color: #d4000e;
-  width: 18px;
-  height: 18px;
+  width: 1.125rem;
+  height: 1.125rem;
   cursor: pointer;
 }
 
 .recap-item {
   background: #d4000e;
   color: #fff;
-  border-radius: 8px;
-  padding: 10px 18px;
-  margin-bottom: 10px;
-  font-size: 15px;
+  border-radius: 0.5rem;
+  padding: 0.625rem 1.125rem;
+  margin-bottom: 0.625rem;
+  font-size: 0.9375rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 12px;
+  gap: 0.75rem;
 }
 
 .recap-key {
@@ -304,19 +304,19 @@ body {
 
 .recap-stars {
   letter-spacing: 3px;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 .submit-btn {
   display: block;
-  margin: 24px auto 0;
+  margin: 1.5rem auto 0;
   background: #d4000e;
   color: #fff;
   border: none;
-  border-radius: 32px;
-  padding: 13px 52px;
+  border-radius: 2rem;
+  padding: 0.8125rem 3.25rem;
   font-style: italic;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
   cursor: pointer;
   letter-spacing: 0.5px;
@@ -327,15 +327,14 @@ body {
 
 .submit-btn:hover {
   background: #b5000c;
-  transform: scale(1);
 }
 
 .nav-row {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 32px;
-  padding: 10px 48px 24px;
+  gap: 2rem;
+  padding: 0.625rem 3rem 1.5rem;
   position: relative;
   z-index: 2;
   flex-shrink: 0;
@@ -349,7 +348,7 @@ body {
   background: none;
   border: none;
   cursor: pointer;
-  padding: 6px;
+  padding: 0.375rem;
   transition: transform 0.1s;
   text-decoration: none;
 }
@@ -359,8 +358,8 @@ body {
 }
 
 .nav-btn img {
-  width: 44px;
-  height: 44px;
+  width: 2.75rem;
+  height: auto;
   object-fit: contain;
 }
 
@@ -373,10 +372,50 @@ body {
 
 .shape-left {
   left: 0;
-  width: clamp(140px, 22vw, 320px);
+  width: 22%;
+  max-width: 320px;
+  min-width: 140px;
 }
 
 .shape-right {
   right: 0;
-  width: clamp(140px, 22vw, 320px);
+  width: 22%;
+  max-width: 320px;
+  min-width: 140px;
+}
+
+/* ── Success page ── */
+.success-content {
+  align-items: center;
+  text-align: center;
+  gap: 1.25rem;
+}
+
+.success-icon {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background: #d4000e;
+  color: #fff;
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.success-title {
+  font-family: "KittyKatt", Georgia, serif;
+  font-style: italic;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  letter-spacing: 1px;
+}
+
+.success-text {
+  font-size: rem;
+  color: #555;
+  max-width: 360px;
+  line-height: 1.6;
 }
