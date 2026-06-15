@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<title>Choix CSS – Projet Kit-Kat Big Forms</title>
+</head>
+<body>
+
+<h1>Choix CSS – Projet Kit-Kat Big Forms</h1>
+<p class="subtitle">Lien avec le cours du 09.03 – Découverte CSS</p>
+
+<h2>Choix CSS 1 — Box Model</h2>
+
+<h3>Notion utilisée :</h3>
+<p>J'ai utilisé le padding et le border-radius.</p>
+
+<h3>Où dans mon code :</h3>
+<p>Dans la classe <code>.input-field</code></p>
+
+<h3>Extrait :</h3>
+<pre><code>.input-field {
+  padding: 0.625rem 1rem;
+  border-radius: 0.5rem;
+  border: 1.5px solid #ddd;
+}</code></pre>
+
+<h3>Effet sur le rendu :</h3>
+<p>Le texte ne touche plus les bords du champ et les angles arrondis donnent un style plus doux et moderne aux zones de saisie.</p>
+
+<hr>
+
+<h2>Choix CSS 2 — Flexbox</h2>
+
+<h3>Notion utilisée :</h3>
+<p>J'ai utilisé <code>display: flex</code> avec <code>justify-content</code> et <code>align-items</code>.</p>
+
+<h3>Où dans mon code :</h3>
+<p>Dans la classe <code>.card-header</code></p>
+
+<h3>Extrait :</h3>
+<pre><code>.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}</code></pre>
+
+<h3>Effet sur le rendu :</h3>
+<p>Le logo et le titre restent alignés et bien espacés sur la même ligne, peu importe la taille de l'écran.</p>
+
+<hr>
+
+<h2>Choix CSS 3 — Transitions et effet au survol (:hover)</h2>
+
+<h3>Notion utilisée :</h3>
+<p>J'ai utilisé la pseudo-classe <code>:hover</code> combinée avec <code>transition</code>.</p>
+
+<h3>Où dans mon code :</h3>
+<p>Dans la classe <code>.submit-btn</code></p>
+
+<h3>Extrait :</h3>
+<pre><code>.submit-btn {
+  background: #d4000e;
+  transition: background 0.15s;
+}
+
+.submit-btn:hover {
+  background: #b5000c;
+}</code></pre>
+
+<h3>Effet sur le rendu :</h3>
+<p>Le bouton change de couleur en douceur quand la souris passe dessus, ce qui rend l'interface plus interactive et agréable à utiliser.</p>
+
+<hr>
+
+<h2>Choix CSS 4 — Police personnalisée (@font-face)</h2>
+
+<h3>Notion utilisée :</h3>
+<p>J'ai utilisé <code>@font-face</code> pour importer une police personnalisée.</p>
+
+<h3>Où dans mon code :</h3>
+<p>Dans <code>.header-title</code></p>
+
+<h3>Extrait :</h3>
+<pre><code>@font-face {
+  font-family: "KittyKatt";
+  src: url("fonts/KittyKatt.ttf") format("truetype");
+}
+
+.header-title {
+  font-family: "KittyKatt", Georgia, serif;
+  font-style: italic;
+  letter-spacing: 2px;
+}</code></pre>
+
+<h3>Effet sur le rendu :</h3>
+<p>Le titre du formulaire a une police originale qui correspond au thème Kit-Kat, au lieu d'utiliser une police par défaut.</p>
+
+<hr>
+
+<h2>Choix CSS 5 — Positionnement (position: absolute)</h2>
+
+<h3>Notion utilisée :</h3>
+<p>J'ai utilisé <code>position: absolute</code> avec <code>z-index</code> pour placer des décorations.</p>
+
+<h3>Où dans mon code :</h3>
+<p>Dans les classes <code>.shape</code>, <code>.shape-left</code> et <code>.shape-right</code></p>
+
+<h3>Extrait :</h3>
+<pre><code>.shape {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+
+.shape-left {
+  left: 0;
+  width: 22%;
+}</code></pre>
+
+<h3>Effet sur le rendu :</h3>
+<p>Les illustrations restent fixées dans les coins inférieurs de la page, derrière le formulaire, sans déranger l'affichage des champs.</p>
+
+</body>
+</html>
